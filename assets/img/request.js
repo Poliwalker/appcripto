@@ -10,7 +10,7 @@ const requestCoins = async (value) => {
 				data.filter((coin) =>
 					coin.name.toLowerCase().includes(value.toLowerCase())
 				),
-				2 // este numero nos trae la cantidad de resultados que queremos ver cuando hagamos la busqueda de una moneda
+				10 // este numero nos trae la cantidad de resultados que queremos ver cuando hagamos la busqueda de una moneda
 		  )
 		: divideArray(data, 10); // este numero nos muestra la cantidad de monedas que quiero ver por pagina
 
